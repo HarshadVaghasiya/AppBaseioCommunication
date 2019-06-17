@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:background="#ACC8E4"
+    >
+
+
+    <EditText
+        android:id="@+id/urlEditext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textColor="#000"
+        android:hint="enter URL"
+        />
+
+    <EditText
+        android:id="@+id/methodEdittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/urlEditext"
+        android:ems="10"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textColor="#000"
+        android:hint="Method"
+        />
+    <EditText
+        android:id="@+id/credentials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/methodEdittext"
+        android:ems="10"
+        android:maxLines="2"
+        android:gravity="center"
+        android:textColor="#000"
+        android:hint="credentials"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bodyEditext"
+        android:gravity="center"
+        android:hint="body in post/put"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:maxLines="2"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/credentials"
+        />
+    <Button
+        android:layout_below="@+id/bodyEditext"
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#000"
+        android:background="#88E7A9"
+        android:text="Submit"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:id="@+id/non"
+        android:gravity="center"
+        android:text="Response from server"
+        android:textSize="15dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/non"
+        >
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            />
+    </ScrollView>
+</RelativeLayout>
