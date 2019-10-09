@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     tools:context=".MainActivity"
-    android:background="#ACC8E4"
-    >
+    android:background="#3470B3">
 
 
     <EditText
@@ -17,7 +16,7 @@
         android:gravity="center"
         android:maxLines="2"
         android:textColor="#000"
-        android:hint="enter URL"
+        android:hint="Enter URL"
         />
 
     <EditText
@@ -44,14 +43,14 @@
         android:maxLines="2"
         android:gravity="center"
         android:textColor="#000"
-        android:hint="credentials"
+        android:hint="Credentials"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bodyEditext"
         android:gravity="center"
-        android:hint="body in post/put"
+        android:hint="Body in Post/Put"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
         android:maxLines="2"
@@ -68,10 +67,10 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:textColor="#000"
+        android:layout_marginTop="24dp"
         android:background="#88E7A9"
         android:text="Submit"
         />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
